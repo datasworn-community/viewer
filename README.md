@@ -2,7 +2,7 @@
 
 Web viewer for [Datasworn](https://github.com/datasworn-community/datasworn) content — browse rulesets, roll on oracles, and follow entity links across expansions.
 
-- **Deployed:** *TBD — pending GitHub Pages enablement in repo settings.*
+- **Deployed:** https://datasworn-community.github.io/viewer/
 - **Consumes:** `@datasworn-community/core` for types + every published `@datasworn-community/*` content package (see [`package.json`](./package.json)) via ES module imports. Each ruleset is loaded on-demand via a dynamic import, so the initial page load stays small.
 
 ## Development
