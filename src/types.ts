@@ -1,9 +1,9 @@
 /**
  * Viewer-specific type definitions
- * Uses types from @datasworn/core where possible
+ * Uses types from @datasworn-community/core where possible
  */
 
-import type { Datasworn } from '@datasworn/core'
+import type { Datasworn } from '@datasworn-community/core'
 
 // Re-export Datasworn types for convenience
 export type { Datasworn }

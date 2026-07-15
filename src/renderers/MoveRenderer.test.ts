@@ -2,7 +2,7 @@
  * Tests for Move rendering functions
  */
 
-import type { Datasworn } from '@datasworn/core'
+import type { Datasworn } from '@datasworn-community/core'
 import { describe, expect, it } from 'vitest'
 import { renderMove } from './MoveRenderer'
 

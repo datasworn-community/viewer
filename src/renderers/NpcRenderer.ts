@@ -2,7 +2,7 @@
  * NPC rendering functions
  */
 
-import type { Datasworn } from '@datasworn/core'
+import type { Datasworn } from '@datasworn-community/core'
 import { formatRank } from '../utils/formatting'
 import { escapeHtml } from '../utils/html'
 import { renderMarkdown } from '../utils/markdown'

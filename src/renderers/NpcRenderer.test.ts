@@ -2,7 +2,7 @@
  * Tests for NPC rendering functions
  */
 
-import type { Datasworn } from '@datasworn/core'
+import type { Datasworn } from '@datasworn-community/core'
 import { describe, expect, it } from 'vitest'
 import { renderNpc } from './NpcRenderer'
 

@@ -2,7 +2,7 @@
  * Delve-specific rendering functions for sites, themes, and domains
  */
 
-import type { Datasworn } from '@datasworn/core'
+import type { Datasworn } from '@datasworn-community/core'
 import { formatRollRange } from '../utils/dice'
 import { formatRank } from '../utils/formatting'
 import { escapeHtml, generateId } from '../utils/html'

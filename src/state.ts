@@ -1,4 +1,4 @@
-import type { Datasworn } from '@datasworn/core'
+import type { Datasworn } from '@datasworn-community/core'
 import type { RulesPackage } from './utils/loader'
 
 // Re-export Datasworn namespace for use in other files

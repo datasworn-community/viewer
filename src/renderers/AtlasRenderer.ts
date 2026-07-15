@@ -2,7 +2,7 @@
  * Atlas entry rendering functions
  */
 
-import type { Datasworn } from '@datasworn/core'
+import type { Datasworn } from '@datasworn-community/core'
 import { renderMarkdown } from '../utils/markdown'
 
 /** Render an atlas entry */

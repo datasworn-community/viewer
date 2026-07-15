@@ -2,7 +2,7 @@
  * Move rendering functions
  */
 
-import type { Datasworn } from '@datasworn/core'
+import type { Datasworn } from '@datasworn-community/core'
 import type { EmbeddedOracle } from '../types'
 import { formatLabel, formatOutcome } from '../utils/formatting'
 import { renderMarkdown } from '../utils/markdown'

@@ -2,7 +2,7 @@
  * Oracle rendering functions
  */
 
-import type { Datasworn } from '@datasworn/core'
+import type { Datasworn } from '@datasworn-community/core'
 import type { EmbeddedOracle, OracleRow } from '../types'
 import { formatRollRange } from '../utils/dice'
 import { escapeHtml, generateId } from '../utils/html'
