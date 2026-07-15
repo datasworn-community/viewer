@@ -27,7 +27,7 @@ bun run preview        # serve the production bundle locally
 
 When a new content package publishes to npm, add it to two places:
 
-1. `package.json` — as a `dependencies` entry, e.g. `"@datasworn-community/fe_runners": "^X.Y.Z"`.
+1. `package.json` — as a `dependencies` entry. Note that community package names on npm are **hyphenated** (e.g. `@datasworn-community/fe-runners`, `@datasworn-community/ancient-wonders`) even though the ruleset ids in `RULESETS` use underscores (`fe_runners`, `ancient_wonders`) to match the JSON `_id`.
 2. [`src/utils/loader.ts`](./src/utils/loader.ts) — a new entry in the `RULESETS` array with the package's dynamic import.
 
 Vite's route-based code splitting will handle the rest.
