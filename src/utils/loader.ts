@@ -32,8 +32,15 @@ const RULESETS: RulesetDef[] = [
 		load: () => import('@datasworn-community/sundered-isles')
 	},
 	{ id: 'starsmith', load: () => import('@datasworn-community/starsmith') },
-	{ id: 'ironsmith', load: () => import('@datasworn-community/ironsmith') }
-	// TODO: add `fe_runners` and `ancient_wonders` when they publish to npm.
+	{ id: 'ironsmith', load: () => import('@datasworn-community/ironsmith') },
+	{
+		id: 'fe_runners',
+		load: () => import('@datasworn-community/fe-runners')
+	},
+	{
+		id: 'ancient_wonders',
+		load: () => import('@datasworn-community/ancient-wonders')
+	}
 ]
 
 export async function loadRuleset(id: string): Promise<RulesPackage> {
