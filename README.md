@@ -23,6 +23,20 @@ bun run preview        # serve the production bundle locally
 - Follows `datasworn:` cross-entity links (moves → oracles → assets, etc.)
 - Markdown safely rendered via DOMPurify — arbitrary HTML in oracle text can't XSS the page
 
+## Schema versions — single-line-at-a-time policy
+
+The viewer pins to **one Datasworn schema line at a time**. The version bundled here matches `@datasworn-community/core`'s current schema version; content packages that ship for a different schema line aren't loaded.
+
+Why: rulesets on different schema lines have different validated shapes. Loading them side-by-side would need per-package version-branching in every renderer — not worth it unless there's real cross-line-playset demand (there isn't yet).
+
+Recommended flow when core bumps its schema line:
+
+1. Bump the viewer's `@datasworn-community/core` dependency to the new line.
+2. Bump every `@datasworn-community/<ruleset>` dependency to a version on the same line. Content packages that haven't caught up get dropped from `RULESETS` in [`src/utils/loader.ts`](./src/utils/loader.ts) with a `TODO` comment until they publish.
+3. Release a new viewer version. Users who need to browse content on the old schema line install the previous viewer release.
+
+Practical note: the loader tolerates missing packages gracefully (dynamic import failure → `console.warn`, ruleset omitted from the picker). So the "bump the line even if some rulesets lag" case degrades to "some rulesets temporarily not shown" rather than a broken build.
+
 ## Adding a new ruleset
 
 When a new content package publishes to npm, add it to two places:
