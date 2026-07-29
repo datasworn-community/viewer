@@ -11,8 +11,8 @@
         "@datasworn-community/ironsmith": "^0.2.0",
         "@datasworn-community/ironsworn-classic": "^0.2.2",
         "@datasworn-community/ironsworn-classic-delve": "^0.2.3",
-        "@datasworn-community/ironsworn-classic-lodestar": "^0.2.2",
-        "@datasworn-community/starforged": "^0.2.3",
+        "@datasworn-community/ironsworn-classic-lodestar": "^0.2.3",
+        "@datasworn-community/starforged": "^0.2.4",
         "@datasworn-community/starsmith": "^0.2.0",
         "@datasworn-community/sundered-isles": "^0.2.2",
         "dompurify": "^3.4.12",
@@ -67,9 +67,9 @@
 
     "@datasworn-community/ironsworn-classic-delve": ["@datasworn-community/ironsworn-classic-delve@0.2.3", "", { "dependencies": { "@datasworn-community/core": "^0.2.0", "@datasworn-community/ironsworn-classic": "^0.2.0" } }, "sha512-K+OUtoTK5+C3K9Pr3LgKCTT1//G9LDlSZ5h0bShWV1/arveF2QXoxknX2b7puVxX0l3BiZXI0+RAcYAMCXeJmw=="],
 
-    "@datasworn-community/ironsworn-classic-lodestar": ["@datasworn-community/ironsworn-classic-lodestar@0.2.2", "", { "dependencies": { "@datasworn-community/core": "^0.2.0", "@datasworn-community/ironsworn-classic": "^0.2.0", "@datasworn-community/ironsworn-classic-delve": "^0.2.0" } }, "sha512-ZSMmp1parJRqm1l/4SO461sciAjgXMWdLZy/DppNwPVyP58NO7VctiLGte/aOD3RvEwMeMVwkh2e/HaR6pBqSQ=="],
+    "@datasworn-community/ironsworn-classic-lodestar": ["@datasworn-community/ironsworn-classic-lodestar@0.2.3", "", { "dependencies": { "@datasworn-community/core": "^0.2.0", "@datasworn-community/ironsworn-classic": "^0.2.0", "@datasworn-community/ironsworn-classic-delve": "^0.2.0" } }, "sha512-cOjUKEomZjhFOqrbaRGrhTdV5Iv3BmXsWMVq0s4c0WheKSATnevq3slk4JVhRrhA6cpSDmoZnQxscdFVvLWung=="],
 
-    "@datasworn-community/starforged": ["@datasworn-community/starforged@0.2.3", "", { "dependencies": { "@datasworn-community/core": "^0.2.0" } }, "sha512-ApPDGmpXaLYj41HeaqPcMTL7xDi7ACFkGsISM5QhlaWQG7jOeBKrMZoPVLMsWBnxLQqeH61yr3aV/fs535BxUA=="],
+    "@datasworn-community/starforged": ["@datasworn-community/starforged@0.2.4", "", { "dependencies": { "@datasworn-community/core": "^0.2.0" } }, "sha512-Btin1BwB9WQtZRx/fiYXOuBTWlUTNR+DtBtQ0HzV7NUXlcHhw1SnDq2UoNxOx1Pbv3Jaow91JNz4x17yiOkRFw=="],
 
     "@datasworn-community/starsmith": ["@datasworn-community/starsmith@0.2.0", "", { "dependencies": { "@datasworn-community/core": "^0.2.0", "@datasworn-community/starforged": "^0.2.0" } }, "sha512-b+A7m1aEhjeaIKWvZ6xa+1UVwNeMw3RNRdK2fPVT224PSObGffQFwRwyvFy/pu1d0mTUuVVvmYYtpmsEPth9bw=="],
 
