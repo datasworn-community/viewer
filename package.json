@@ -22,7 +22,7 @@
 		"vitest": "^4.1.7"
 	},
 	"dependencies": {
-		"@datasworn-community/core": "^0.2.9",
+		"@datasworn-community/core": "^0.2.10",
 		"@datasworn-community/ironsworn-classic": "^0.2.2",
 		"@datasworn-community/ironsworn-classic-delve": "^0.2.3",
 		"@datasworn-community/ironsworn-classic-lodestar": "^0.2.3",
