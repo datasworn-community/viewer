@@ -32,7 +32,7 @@
 		"@datasworn-community/ironsmith": "^0.2.0",
 		"@datasworn-community/fe-runners": "^0.2.0",
 		"@datasworn-community/ancient-wonders": "^0.2.0",
-		"dompurify": "^3.4.12",
+		"dompurify": "^3.4.14",
 		"marked": "^18.0.7"
 	},
 	"overrides": {
