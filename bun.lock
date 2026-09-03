@@ -5,16 +5,16 @@
     "": {
       "name": "@datasworn-community/viewer",
       "dependencies": {
-        "@datasworn-community/ancient-wonders": "^0.2.0",
-        "@datasworn-community/core": "^0.2.9",
-        "@datasworn-community/fe-runners": "^0.2.0",
-        "@datasworn-community/ironsmith": "^0.2.0",
-        "@datasworn-community/ironsworn-classic": "^0.2.2",
-        "@datasworn-community/ironsworn-classic-delve": "^0.2.3",
-        "@datasworn-community/ironsworn-classic-lodestar": "^0.2.3",
-        "@datasworn-community/starforged": "^0.2.4",
-        "@datasworn-community/starsmith": "^0.2.0",
-        "@datasworn-community/sundered-isles": "^0.2.2",
+        "@datasworn-community/ancient-wonders": "^0.2.1",
+        "@datasworn-community/core": "^0.2.11",
+        "@datasworn-community/fe-runners": "^0.2.1",
+        "@datasworn-community/ironsmith": "^0.2.1",
+        "@datasworn-community/ironsworn-classic": "^0.2.3",
+        "@datasworn-community/ironsworn-classic-delve": "^0.2.4",
+        "@datasworn-community/ironsworn-classic-lodestar": "^0.2.4",
+        "@datasworn-community/starforged": "^0.2.5",
+        "@datasworn-community/starsmith": "^0.2.1",
+        "@datasworn-community/sundered-isles": "^0.2.3",
         "dompurify": "^3.4.14",
         "marked": "^18.0.7",
       },
@@ -52,25 +52,25 @@
 
     "@csstools/css-tokenizer": ["@csstools/css-tokenizer@4.0.0", "", {}, "sha512-QxULHAm7cNu72w97JUNCBFODFaXpbDg+dP8b/oWFAZ2MTRppA3U00Y2L1HqaS4J6yBqxwa/Y3nMBaxVKbB/NsA=="],
 
-    "@datasworn-community/ancient-wonders": ["@datasworn-community/ancient-wonders@0.2.0", "", { "dependencies": { "@datasworn-community/core": "^0.2.0", "@datasworn-community/starforged": "^0.2.0" } }, "sha512-hrS2N2eN+H0dTFha2azEHwGSHO+Pxjb3vtalIq32X/xb6zRxbmfiu5GSziMVLlpQVJZshM8wK4m2idCKv4CGVw=="],
+    "@datasworn-community/ancient-wonders": ["@datasworn-community/ancient-wonders@0.2.1", "", { "dependencies": { "@datasworn-community/core": "^0.2.0", "@datasworn-community/starforged": "^0.2.0" } }, "sha512-o7bCbn1AcvsIopmGBCjAiBQTLOfuvzwYLmtJoJzLAxcIz6cJ81D+1Ce/i6cS3qB07sa33VVCSWUOcjD4fFJ7KA=="],
 
-    "@datasworn-community/core": ["@datasworn-community/core@0.2.9", "", {}, "sha512-hj5SQHTxo1sm77ROLz6bZpkW8kF/D4kutk2R5LmcxHc2jiRnxjEoNFkOfSxpNL0/6inKa9NHeRxSwXyZM4a/Jg=="],
+    "@datasworn-community/core": ["@datasworn-community/core@0.2.11", "", {}, "sha512-+X+RlFGAKxVcp9VoGp4yWPJU0eGxZYRbUcLg4cYy5Ag5QRL6WnLCLBqhpWs4XjqP7f7bWfSKzcbtSv7fQDfPUg=="],
 
-    "@datasworn-community/fe-runners": ["@datasworn-community/fe-runners@0.2.0", "", { "dependencies": { "@datasworn-community/core": "^0.2.0", "@datasworn-community/starforged": "^0.2.0" } }, "sha512-EATBXZyvedXrSXhQyUp5YQSNzSKy7D2anlBn9nZG0sOefKe8SnCaCjfIZF3LcMDVZ2BIC19x7CMDF0cb/rASlw=="],
+    "@datasworn-community/fe-runners": ["@datasworn-community/fe-runners@0.2.1", "", { "dependencies": { "@datasworn-community/core": "^0.2.0", "@datasworn-community/starforged": "^0.2.0" } }, "sha512-fIo10C8hGPG9cn78dDQpCNM8dZYAhmg0PTaT8RGQZfb6RwJzsMudIg0/Gh7yFLue6oc4tgoEMVweaYztr1QTqA=="],
 
-    "@datasworn-community/ironsmith": ["@datasworn-community/ironsmith@0.2.0", "", { "dependencies": { "@datasworn-community/core": "^0.2.0", "@datasworn-community/ironsworn-classic": "^0.2.0", "@datasworn-community/ironsworn-classic-delve": "^0.2.0" } }, "sha512-d9t9sB27AmmDUjIiLySq9QoOlOQ1zbMRHT1uGXHKBQ+bvZv8GeO3PzMo0j76IPzy9UCdIWcwlQhj8IFGiLB5Mg=="],
+    "@datasworn-community/ironsmith": ["@datasworn-community/ironsmith@0.2.1", "", { "dependencies": { "@datasworn-community/core": "^0.2.0", "@datasworn-community/ironsworn-classic": "^0.2.0", "@datasworn-community/ironsworn-classic-delve": "^0.2.0" } }, "sha512-D6tgemJ2zDs8lZReL+ZtThqTrN/3zVPhTYSNy138t5HUlc1TxsgzaA6t1hEf0Q6QOVCfx/SPqC7UPLF8rY6QAw=="],
 
-    "@datasworn-community/ironsworn-classic": ["@datasworn-community/ironsworn-classic@0.2.2", "", { "dependencies": { "@datasworn-community/core": "^0.2.0" } }, "sha512-BJNbVWUJFTTv3k6rqqzcARdSL24gb/WgZpKIIjgiEP6YRHDJCZBIm2kpheCWJB/6LmTp7bM+DK58a48U4wU8JQ=="],
+    "@datasworn-community/ironsworn-classic": ["@datasworn-community/ironsworn-classic@0.2.3", "", { "dependencies": { "@datasworn-community/core": "^0.2.0" } }, "sha512-j+dZiN7RA5VfP/aSJildvLoLSNEXNrvS8lcwN/9bUpAeN4aWQ8peGo+zGBPCtNK01lts02WTmgfbQQBDYJUqvQ=="],
 
-    "@datasworn-community/ironsworn-classic-delve": ["@datasworn-community/ironsworn-classic-delve@0.2.3", "", { "dependencies": { "@datasworn-community/core": "^0.2.0", "@datasworn-community/ironsworn-classic": "^0.2.0" } }, "sha512-K+OUtoTK5+C3K9Pr3LgKCTT1//G9LDlSZ5h0bShWV1/arveF2QXoxknX2b7puVxX0l3BiZXI0+RAcYAMCXeJmw=="],
+    "@datasworn-community/ironsworn-classic-delve": ["@datasworn-community/ironsworn-classic-delve@0.2.4", "", { "dependencies": { "@datasworn-community/core": "^0.2.0", "@datasworn-community/ironsworn-classic": "^0.2.0" } }, "sha512-OigdQ2GqVDXVWng2ElS7sK2xEhuxmBPuT2BTYcIiotNj+uaYXbqBpHZmrOX5RNeO7tIX4u5B145VGcdPnvi9wA=="],
 
-    "@datasworn-community/ironsworn-classic-lodestar": ["@datasworn-community/ironsworn-classic-lodestar@0.2.3", "", { "dependencies": { "@datasworn-community/core": "^0.2.0", "@datasworn-community/ironsworn-classic": "^0.2.0", "@datasworn-community/ironsworn-classic-delve": "^0.2.0" } }, "sha512-cOjUKEomZjhFOqrbaRGrhTdV5Iv3BmXsWMVq0s4c0WheKSATnevq3slk4JVhRrhA6cpSDmoZnQxscdFVvLWung=="],
+    "@datasworn-community/ironsworn-classic-lodestar": ["@datasworn-community/ironsworn-classic-lodestar@0.2.4", "", { "dependencies": { "@datasworn-community/core": "^0.2.0", "@datasworn-community/ironsworn-classic": "^0.2.0", "@datasworn-community/ironsworn-classic-delve": "^0.2.0" } }, "sha512-EGEDJediANxey1W/n8Mpp6Q0t1uLf5Z0OQlSai0hTsCl403UNzybPWeaD9Lm9yKYPLYcp3L8bTT4s76MmYrQyg=="],
 
-    "@datasworn-community/starforged": ["@datasworn-community/starforged@0.2.4", "", { "dependencies": { "@datasworn-community/core": "^0.2.0" } }, "sha512-Btin1BwB9WQtZRx/fiYXOuBTWlUTNR+DtBtQ0HzV7NUXlcHhw1SnDq2UoNxOx1Pbv3Jaow91JNz4x17yiOkRFw=="],
+    "@datasworn-community/starforged": ["@datasworn-community/starforged@0.2.5", "", { "dependencies": { "@datasworn-community/core": "^0.2.0" } }, "sha512-dIwVH07gEhOlPmMonlUsMA/N7Cg6qGzBZvEFGGuEfjyOxrSnDYCCBFV0dr10S23OT4SjkEBlPDQQ+zahOLNOnA=="],
 
-    "@datasworn-community/starsmith": ["@datasworn-community/starsmith@0.2.0", "", { "dependencies": { "@datasworn-community/core": "^0.2.0", "@datasworn-community/starforged": "^0.2.0" } }, "sha512-b+A7m1aEhjeaIKWvZ6xa+1UVwNeMw3RNRdK2fPVT224PSObGffQFwRwyvFy/pu1d0mTUuVVvmYYtpmsEPth9bw=="],
+    "@datasworn-community/starsmith": ["@datasworn-community/starsmith@0.2.1", "", { "dependencies": { "@datasworn-community/core": "^0.2.0", "@datasworn-community/starforged": "^0.2.0" } }, "sha512-3mNaVKjeQ42DFJ/zc3FFaVTj1T8Wbxwi9zmsQcQr1pO1nAe8E0hsxP2XhXGG1wI8iAOsaKaWTFs2nMvKzUA+mA=="],
 
-    "@datasworn-community/sundered-isles": ["@datasworn-community/sundered-isles@0.2.2", "", { "dependencies": { "@datasworn-community/core": "^0.2.0", "@datasworn-community/starforged": "^0.2.0" } }, "sha512-8gE4VD08Lv/MXHtJ8eCCLz4zgsrfTg9Mw8ftUU4Y9qXgJt2wfy1tbj2RVS30P0XDJOo2zA89UNwToZwwoBEGig=="],
+    "@datasworn-community/sundered-isles": ["@datasworn-community/sundered-isles@0.2.3", "", { "dependencies": { "@datasworn-community/core": "^0.2.0", "@datasworn-community/starforged": "^0.2.0" } }, "sha512-l16Qb2IToDVBrGSJ/P9UKfoGyEsxFCUsjb4ZltLWN7NaApj0gw/TCkodj2qg7NAjaDG9wUqsEuKeUljvHHIcRA=="],
 
     "@emnapi/core": ["@emnapi/core@1.11.1", "", { "dependencies": { "@emnapi/wasi-threads": "1.2.2", "tslib": "^2.4.0" } }, "sha512-RSvbQmHzdKzNsLYa/wHrbc3KN4sYLKAdPZxqiM2HATqv/SBk2/ENSHpvXGaLOMcsAyz0poEGqkmmKYG3OWiJEQ=="],
 
@@ -323,14 +323,6 @@
     "xml-name-validator": ["xml-name-validator@5.0.0", "", {}, "sha512-EvGK8EJ3DhaHfbRlETOWAS5pO9MZITeauHKJyb8wyajUfQUenkIg2MvLDTZ4T/TgIcm3HU0TFBgWWboAZ30UHg=="],
 
     "xmlchars": ["xmlchars@2.2.0", "", {}, "sha512-JZnDKK8B0RCDw84FNdDAIpZK+JuJw+s7Lz8nksI7SIuU3UXJJslUthsi+uWBUYOwPFwW7W7PRLRfUKpxjtjFCw=="],
-
-    "@datasworn-community/ancient-wonders/@datasworn-community/starforged": ["@datasworn-community/starforged@0.2.2", "", { "dependencies": { "@datasworn-community/core": "^0.2.0" } }, "sha512-K39HqzB2wmpYbTe6/tlKUrzCW/iLcE29+gNT9lIlFgzxV25aqJaNTuxo0rsZ3CGNIhslw1Zo3yMaIAM63msdwA=="],
-
-    "@datasworn-community/fe-runners/@datasworn-community/starforged": ["@datasworn-community/starforged@0.2.2", "", { "dependencies": { "@datasworn-community/core": "^0.2.0" } }, "sha512-K39HqzB2wmpYbTe6/tlKUrzCW/iLcE29+gNT9lIlFgzxV25aqJaNTuxo0rsZ3CGNIhslw1Zo3yMaIAM63msdwA=="],
-
-    "@datasworn-community/starsmith/@datasworn-community/starforged": ["@datasworn-community/starforged@0.2.2", "", { "dependencies": { "@datasworn-community/core": "^0.2.0" } }, "sha512-K39HqzB2wmpYbTe6/tlKUrzCW/iLcE29+gNT9lIlFgzxV25aqJaNTuxo0rsZ3CGNIhslw1Zo3yMaIAM63msdwA=="],
-
-    "@datasworn-community/sundered-isles/@datasworn-community/starforged": ["@datasworn-community/starforged@0.2.2", "", { "dependencies": { "@datasworn-community/core": "^0.2.0" } }, "sha512-K39HqzB2wmpYbTe6/tlKUrzCW/iLcE29+gNT9lIlFgzxV25aqJaNTuxo0rsZ3CGNIhslw1Zo3yMaIAM63msdwA=="],
 
     "data-urls/whatwg-url": ["whatwg-url@16.0.1", "", { "dependencies": { "@exodus/bytes": "^1.11.0", "tr46": "^6.0.0", "webidl-conversions": "^8.0.1" } }, "sha512-1to4zXBxmXHV3IiSSEInrreIlu02vUOvrhxJJH5vcxYTBDAx51cqZiKdyTxlecdKNSjj8EcxGBxNf6Vg+945gw=="],
 
