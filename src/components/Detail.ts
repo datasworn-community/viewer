@@ -29,6 +29,11 @@ import {
 	isTruth
 } from '../types'
 import { formatLabel, formatType } from '../utils/formatting'
+// Statically imported because `state.ts` imports this module statically too --
+// `navigateToId` needs `isSchemaId` synchronously. A dynamic import here would
+// not split anything (the bundler says so), and the ~0.3 MB that actually
+// matters is the schema JSON, which `loadSchema` imports on its own.
+import { describeDefinition, loadSchema } from '../utils/schema'
 import { escapeHtml, generateId } from '../utils/html'
 import { setupHoverPreview } from './HoverPreview'
 
@@ -85,6 +90,34 @@ export function createDetailPanel(container: HTMLElement): void {
 	})
 
 	state.subscribe((s) => {
+		// A `#schema:` hash selects a type rather than an item, so this branches
+		// before the "nothing selected" message -- otherwise a schema url would
+		// render the empty state. The schema itself loads on demand, so nobody
+		// who never opens one pays for the ~0.3 MB.
+		if (s.schemaRef) {
+			const { typeName, discriminator } = s.schemaRef
+			panel.innerHTML = `<div class="detail-empty"><p>Loading schema…</p></div>`
+			void (async () => {
+				const [{ renderSchemaDefinition }, schema] = await Promise.all([
+					import('../renderers/schema'),
+					loadSchema()
+				])
+				// Re-read the state *after the last await*, not before it: the
+				// slow half is the schema load, so a check that precedes it
+				// leaves open exactly the window it was meant to close. Both
+				// halves of the ref count -- `Type` and `Type/value` are
+				// different pages.
+				const current = state.getState().schemaRef
+				if (current?.typeName !== typeName || current.discriminator !== discriminator)
+					return
+				const def = describeDefinition(schema, typeName, discriminator)
+				panel.innerHTML = def
+					? renderSchemaDefinition(def)
+					: `<div class="detail-empty"><p>No schema type named <code>${escapeHtml(typeName)}</code></p></div>`
+			})()
+			return
+		}
+
 		if (!s.selectedItem) {
 			panel.innerHTML = `
 				<div class="detail-empty">

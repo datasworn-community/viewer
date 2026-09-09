@@ -4,6 +4,8 @@ import type { RulesPackage } from './utils/loader'
 // Re-export Datasworn namespace for use in other files
 export type { Datasworn }
 
+import { isSchemaId, parseSchemaId, type SchemaRef } from './utils/schema'
+
 export interface RollHistoryEntry {
 	id: number
 	timestamp: Date
@@ -20,6 +22,12 @@ export interface AppState {
 	selectedItem: unknown | null
 	loading: boolean
 	rollHistory: RollHistoryEntry[]
+	/**
+	 * The schema type a `#schema:` hash selected, if the current hash is one.
+	 * Undefined while looking at content, so a renderer can tell the two apart
+	 * without re-parsing the URL.
+	 */
+	schemaRef?: SchemaRef
 }
 
 type Listener = (state: AppState) => void
@@ -123,6 +131,27 @@ class StateManager {
 
 	// Navigate to an item by its Datasworn ID (e.g., "move:classic/suffer/endure_harm")
 	navigateToId(id: string, updateUrl = true): boolean {
+		// Schema ids branch first, and must: everything below assumes the id is
+		// a content path -- it rejects fewer than two slash-segments and reads
+		// the first as a ruleset. `schema:OracleRollable` has one segment and
+		// would be rejected; `schema:OracleRollable/table_text` has two and
+		// would be read as ruleset "OracleRollable".
+		//
+		// `schema:` is one more type in the `<type>:<path>` grammar the hash
+		// already uses, which is why this needs no router and no 404 fallback
+		// (see datasworn-community/.github#13).
+		if (isSchemaId(id)) {
+			const schemaRef = parseSchemaId(id)
+			if (schemaRef == null) return false
+			if (updateUrl) history.pushState({ itemId: id }, '', `#${id}`)
+			this.setState({
+				schemaRef,
+				selectedPath: null,
+				selectedItem: null
+			})
+			return true
+		}
+
 		// Parse the ID format: "type:ruleset/category/.../item"
 		const colonIdx = id.indexOf(':')
 		if (colonIdx === -1) return false
@@ -182,6 +211,8 @@ class StateManager {
 				history.pushState({ itemId: id }, '', `#${id}`)
 			}
 			this.setState({
+				// Leaving the schema view: clear it, so nothing renders both.
+				schemaRef: undefined,
 				selectedPath: result.path,
 				selectedItem: result.item
 			})

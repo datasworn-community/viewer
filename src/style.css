@@ -1863,3 +1863,77 @@ html, body {
 		font-size: 18px;
 	}
 }
+
+/* Schema view -- follows the .oracle-table idiom so the two read alike */
+.schema-description {
+	color: var(--text-secondary);
+	margin: 12px 0 16px;
+}
+
+.schema-variants-label {
+	color: var(--text-muted);
+	font-size: 13px;
+	margin: 0 0 8px;
+}
+
+.schema-variants {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin: 0 0 20px;
+}
+
+.schema-variants li {
+	border: 1px solid var(--border);
+	border-radius: 6px;
+	padding: 6px 10px;
+	background: var(--bg-card);
+}
+
+.schema-variant-type {
+	color: var(--text-muted);
+	font-size: 12px;
+	margin-left: 6px;
+}
+
+.schema-fields {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid var(--border);
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.schema-fields th {
+	background: var(--bg-secondary);
+	padding: 10px 14px;
+	text-align: left;
+	font-weight: 600;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: var(--text-muted);
+}
+
+.schema-fields td {
+	padding: 10px 14px;
+	border-top: 1px solid var(--border);
+	background: var(--bg-card);
+	vertical-align: top;
+}
+
+.schema-field-name,
+.schema-field-type {
+	white-space: nowrap;
+}
+
+.schema-field-req {
+	color: var(--text-muted);
+	font-size: 12px;
+	white-space: nowrap;
+}
+
+.schema-field-nodesc {
+	color: var(--text-muted);
+}
