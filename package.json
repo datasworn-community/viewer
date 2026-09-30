@@ -33,7 +33,7 @@
 		"@datasworn-community/fe-runners": "^0.3.0",
 		"@datasworn-community/ancient-wonders": "^0.3.0",
 		"dompurify": "^3.4.15",
-		"marked": "^18.0.13"
+		"marked": "^18.0.14"
 	},
 	"overrides": {
 		"ws": "^8.20.1",
