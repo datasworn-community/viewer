@@ -22,7 +22,7 @@
 		"vitest": "^5.0.1"
 	},
 	"dependencies": {
-		"@datasworn-community/core": "^0.3.1",
+		"@datasworn-community/core": "^0.3.3",
 		"@datasworn-community/ironsworn-classic": "^0.3.0",
 		"@datasworn-community/ironsworn-classic-delve": "^0.3.0",
 		"@datasworn-community/ironsworn-classic-lodestar": "^0.3.0",
@@ -31,7 +31,7 @@
 		"@datasworn-community/starsmith": "^0.3.0",
 		"@datasworn-community/ironsmith": "^0.3.0",
 		"@datasworn-community/fe-runners": "^0.3.0",
-		"@datasworn-community/ancient-wonders": "^0.3.0",
+		"@datasworn-community/ancient-wonders": "^0.3.1",
 		"dompurify": "^3.4.15",
 		"marked": "^18.0.13"
 	},
