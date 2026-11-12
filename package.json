@@ -18,8 +18,8 @@
 	"devDependencies": {
 		"jsdom": "^30.1.0",
 		"typescript": "^7.0.2",
-		"vite": "^8.3.0",
-		"vitest": "^5.0.1"
+		"vite": "^8.3.7",
+		"vitest": "^5.1.0"
 	},
 	"dependencies": {
 		"@datasworn-community/core": "^0.3.1",
